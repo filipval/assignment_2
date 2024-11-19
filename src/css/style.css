@@ -35,6 +35,7 @@ main {
 
 .squad__player,
 .squad__player--flag,
+.squad__position--title,
 .squad__player--number,
 .squad__player--first-name,
 .squad__player--last-name {
@@ -55,7 +56,7 @@ main {
 
 .squad__position--title {
   font-size: 11px;
-  top: 65px;
+  top: 70px;
   left: 15px;
 }
 
