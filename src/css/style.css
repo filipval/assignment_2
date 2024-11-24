@@ -1,10 +1,12 @@
 main {
-  font-family: Helvetica, sans-serif;
+  font-family: var(--font-family);
 }
 
+/* --------------------------------------- */
 /* Squad Cards */
+
 .squad__position {
-  font-weight: lighter;
+  font-weight: var(--font-weight-light);
   margin: 50px 0 15px 7%;
 }
 
@@ -14,10 +16,10 @@ main {
 .grid__squad--forwards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-gap: var(--grid-gap);
   width: 100%;
-  padding: 0 100px;
-  margin-bottom: 110px;
+  padding: 0 var(--spacing-large);
+  margin-bottom: var(--spacing-xlarge);
 }
 
 .squad__card {
@@ -25,12 +27,12 @@ main {
   width: 100%;
   height: 400px;
   position: relative;
-  border-radius: 20px;
+  border-radius: var(--radius-card);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+  color: var(--color-white);
+  filter: var(--shadow-card);
 }
 
 .squad__player,
@@ -40,64 +42,67 @@ main {
 .squad__player--first-name,
 .squad__player--last-name {
   position: absolute;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+  filter: var(--shadow-card);
 }
 
 .squad__player {
-  height: 400px;
+  height: var(--height-card);
 }
 
 .squad__player--flag {
   max-width: 70px;
   max-height: 45px;
-  top: 15px;
-  left: 15px;
+  top: var(--spacing-small);
+  left: var(--spacing-small);
 }
 
 .squad__position--title {
-  font-size: 11px;
+  font-size: var(--font-size-small);
   top: 70px;
   left: 15px;
 }
 
 .squad__player--number {
-  font-weight: bold;
-  font-size: 90px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xlarge);
   -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: var(--color-white);
   color: transparent;
   bottom: 45px;
-  left: 15px;
+  left: var(--spacing-small);
 }
 
 .squad__player--first-name {
-  font-weight: bold;
-  font-size: 13px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-medium);
   bottom: 45px;
-  left: 15px;
+  left: var(--spacing-small);
 }
 
 .squad__player--last-name {
-  font-weight: bold;
-  font-size: 28px;
-  bottom: 15px;
-  left: 15px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-large);
+  bottom: var(--spacing-small);
+  left: var(--spacing-small);
 }
 
+/* --------------------------------------- */
+/* Responsive Adjustments */
 /* Tablet */
+
 @media screen and (max-width: 820px) {
   .grid__squad--goalkeepers,
   .grid__squad--midfielders,
   .grid__squad--defenders,
   .grid__squad--forwards {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 50px;
+    padding: 0 var(--spacing-medium);
     margin-bottom: 70px;
   }
 
   .squad__card,
   .squad__player {
-    height: 350px;
+    height: var(--height-card-tablet);
   }
 }
 

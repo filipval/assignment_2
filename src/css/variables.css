@@ -1,6 +1,28 @@
 :root {
-  /* Fonts */
+  /* Font settings */
   --font-family: Helvetica, sans-serif;
-  --font-weight-light: lighter;
-  --font-weight-bold: bold;
+  --font-weight-light: 300;
+  --font-weight-bold: 600;
+
+  /* Colors */
+  --color-white: #ffffff;
+
+  /* Spacing */
+  --spacing-small: 15px;
+  --spacing-medium: 50px;
+  --spacing-large: 100px;
+  --spacing-xlarge: 110px;
+  --grid-gap: 30px;
+
+  /* Font sizes */
+  --font-size-small: 11px;
+  --font-size-medium: 13px;
+  --font-size-large: 28px;
+  --font-size-xlarge: 90px;
+
+  /* Cards */
+  --radius-card: 20px;
+  --height-card: 400px;
+  --height-card-tablet: 350px;
+  --shadow-card: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
