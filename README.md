@@ -9,6 +9,7 @@ To use the fictional Mancherster United Squad list webpage, open the Netlify lin
 ## Features
 
 Scroll through the Manchester United Squad list.
+
 Simple, responsive user interface.
 
 ## Netlify Deployment
